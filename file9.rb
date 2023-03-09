@@ -1,15 +1,11 @@
-pattern = ['1', '1', '2', '2', '3', '3', '4', '4', '5', '5']
+pattern = ['<', '<', '>', '>', '+', '+', '*', '*', '^', '^',]
 starting_count = 0
-end_count = 20
+ending_count = 30
 
-
-while starting_count < end_count
-    first_element = pattern.shift()
-    pattern.push(first_element)
+while starting_count < ending_count
+    new_pattern = pattern.shift()
+    pattern.push(new_pattern)
     puts pattern.join()
     starting_count += 1
+
 end
-
-
-
-
