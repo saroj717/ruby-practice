@@ -49,3 +49,45 @@ def hi
     puts "My daughter name is Sarina"
 end
 hi { puts "My wife name is Sabina"}
+
+
+
+
+class Vehical
+    def initialize(name, make, model, year, origin)
+        puts "#{name}'s car is #{make} #{model} of year #{year} build in #{origin}"
+    end
+
+    def drive(name)
+        puts "#{name}'s car is driving automatically!"
+    end
+end 
+
+mycar = Vehical.new("saroj", "Toyota", "Metrix", "2005", "Japan")
+sabina_car = Vehical.new("Sabina", "VW", "Golf", "2018", "Germany")
+sabina_car.drive("sabina")
+mycar.drive("saroj")
+
+
+
+
+class Vehicle
+    def initialize (name, make, model, year, origin, color)
+         puts "#{name} car make is: #{make}."
+         puts "The model is: #{model}." 
+         puts "It was made in year #{year}."
+         puts "And it was made in #{origin}."
+         puts "Also, the color of #{name} car is: #{color}."
+    end
+
+    def drive(name)
+        puts "#{name} car is automatic!"
+    end
+end
+
+mycar = Vehicle.new("Saroj", "Toyota", "Matrix", "2005", "Japan", "Black")
+puts
+puts
+my_wife_car = Vehicle.new("Sabina", "Volkswagen", "Golf", "2018", "Germany", "white")
+mycar.drive("Saroj")
+mycar.drive("Sabina")
